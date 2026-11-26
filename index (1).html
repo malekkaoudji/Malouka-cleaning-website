@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Malouka Professional Cleaning Services. Luxury home and commercial cleaning with care and attention to detail.">
+<title>Malouka | Professional Cleaning Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--black:#080709;--black2:#100d10;--pink:#e58eae;--pink2:#f4c3d3;--gold:#c9a45f;--gold2:#f0d99e;--ivory:#f8f0e9;--muted:#c9bdba}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--ivory);font-family:"DM Sans",Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),var(--pink),var(--gold),transparent)}
+header{position:relative;z-index:5;background:#090709;border-bottom:1px solid #8e6b3b66}.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px}.monogram{width:49px;height:49px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--pink);font:32px "Cormorant Garamond",serif;box-shadow:inset 0 0 0 4px #c9a45f15}.brand-name{font:22px "Cormorant Garamond",serif;letter-spacing:3px;color:var(--pink)}.brand-name small{display:block;color:var(--gold2);font:9px "DM Sans",sans-serif;letter-spacing:1.7px;margin-top:3px}
+.links{display:flex;gap:25px;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#eadfcf}.links a:hover{color:var(--pink)}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:14px 22px;background:linear-gradient(135deg,#f0b7c9,#d77b9e);color:#160d11;border:1px solid var(--gold);font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.outline{display:inline-flex;padding:13px 22px;border:1px solid var(--gold);font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+.hero{min-height:620px;position:relative;overflow:hidden;display:flex;align-items:center;background:linear-gradient(90deg,rgba(7,6,8,.98) 0%,rgba(7,6,8,.91) 46%,rgba(7,6,8,.35) 100%),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1900&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:18px;border:1px solid #c9a45f50;pointer-events:none}
+.hero-copy{position:relative;z-index:2;max-width:650px;padding:100px 0}.eyebrow{color:var(--gold2);font-size:10px;letter-spacing:3px;text-transform:uppercase}.eyebrow:before{content:"";display:inline-block;width:35px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px}
+h1{font:clamp(52px,7vw,86px)/.91 "Cormorant Garamond",serif;letter-spacing:-1px;text-transform:uppercase;color:var(--gold2);margin:23px 0}.pink{color:var(--pink);font-style:italic}.script{font:38px "Great Vibes",cursive;color:var(--pink)}.ornament{color:var(--gold);letter-spacing:4px;margin:18px 0}.hero-copy p.desc{max-width:510px;color:#e0d5d0;font-size:13px;line-height:1.9}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:27px}
+.floral{position:absolute;right:5%;top:12%;width:250px;height:250px;opacity:.86;filter:drop-shadow(0 0 20px #d8799c30)}.petal{position:absolute;left:50%;top:50%;width:70px;height:115px;margin:-57px 0 0 -35px;border:1px solid #e9a7bcaa;border-radius:55% 55% 48% 48%;background:linear-gradient(180deg,#e9a7bc35,#c9a45f08);transform-origin:center 50%}.petal:nth-child(1){transform:rotate(0deg) translateY(-32px)}.petal:nth-child(2){transform:rotate(45deg) translateY(-32px)}.petal:nth-child(3){transform:rotate(90deg) translateY(-32px)}.petal:nth-child(4){transform:rotate(135deg) translateY(-32px)}.petal:nth-child(5){transform:rotate(180deg) translateY(-32px)}.petal:nth-child(6){transform:rotate(225deg) translateY(-32px)}.petal:nth-child(7){transform:rotate(270deg) translateY(-32px)}.petal:nth-child(8){transform:rotate(315deg) translateY(-32px)}.flower-center{position:absolute;left:50%;top:50%;width:29px;height:29px;margin:-14px;border-radius:50%;background:radial-gradient(circle,#f8e3ae,#bd9148);box-shadow:0 0 22px #d8ad60}
+.promise{padding:24px 0;border-top:1px solid #c9a45f88;border-bottom:1px solid #c9a45f88;background:#100d10}.promise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.promise-item{display:flex;align-items:center;gap:12px}.promise-icon{width:43px;height:43px;display:grid;place-items:center;border:1px solid var(--gold);border-radius:50%;color:var(--pink);font:23px "Cormorant Garamond",serif}.promise-item b{display:block;color:var(--gold2);font:17px "Cormorant Garamond",serif}.promise-item small{display:block;color:var(--muted);font-size:9px;margin-top:3px}
+section.content{padding:82px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 40px}.section-head .script{margin:0}.section-head h2{font:44px "Cormorant Garamond",serif;text-transform:uppercase;color:var(--gold2);margin:7px 0}.section-head p{font-size:12px;line-height:1.8;color:var(--muted)}
+.services{background:radial-gradient(ellipse at 50% 0,#2a1720 0%,#100d10 48%)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.service{background:#0b090b;border:1px solid #a77d3e88;padding:0 0 25px;text-align:center;position:relative}.service img{display:block;width:100%;height:185px;object-fit:cover;filter:saturate(.78) brightness(.82)}.service .icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;margin:-23px auto 8px;position:relative;background:linear-gradient(135deg,#f0b7c9,#c65c85);border:1px solid var(--gold);color:#211016;font-size:21px}.service h3{font:23px "Cormorant Garamond",serif;color:var(--gold2);margin:9px 8px}.service p{font-size:11px;line-height:1.8;color:var(--muted);padding:0 20px;margin:0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px}.about-image{position:relative;padding:12px;border:1px solid var(--gold)}.about-image img{width:100%;height:380px;display:block;object-fit:cover;filter:brightness(.8)}.about-image:after{content:"";position:absolute;inset:22px;border:1px solid #e7a4bc99;pointer-events:none}.about-copy h2{font:45px/1 "Cormorant Garamond",serif;color:var(--gold2);margin:15px 0}.about-copy p{font-size:12px;line-height:2;color:var(--muted)}
+.contact{background:linear-gradient(#0c090cdd,#0c090cee),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80') center/cover;text-align:center;border-top:1px solid #c9a45f66}.contact-box{max-width:780px;margin:auto;border:1px solid var(--gold);padding:55px 25px;background:#090709d9}.contact h2{font:48px "Cormorant Garamond",serif;color:var(--gold2);margin:10px 0}.contact p{font-size:12px;line-height:1.8;color:var(--muted);max-width:500px;margin:0 auto 25px}.contact-actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}.details{margin-top:25px;font-size:11px;line-height:2;color:#d7c9c5}.details a{color:var(--pink2)}
+footer{padding:27px 0;text-align:center;border-top:1px solid #c9a45f66;background:#080709;color:#a99a98;font-size:9px;letter-spacing:1.5px}.footer-script{font:30px "Great Vibes",cursive;color:var(--pink);letter-spacing:0;margin-bottom:8px}
+@media(max-width:800px){.nav{padding:16px 0;flex-wrap:wrap}.links{order:3;width:100%;justify-content:center;gap:18px}.nav>.btn{display:none}.hero{min-height:580px;background-position:60% center}.floral{right:-70px;top:18%;transform:scale(.75);opacity:.48}.promise-grid{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:1fr 1fr}.about-grid{gap:28px}}
+@media(max-width:560px){.brand-name{font-size:18px}.hero-copy{padding:75px 0}.hero{min-height:600px}.hero:after{inset:9px}.floral{right:-105px;top:18%;transform:scale(.65)}h1{font-size:55px}.promise-grid{grid-template-columns:1fr 1fr;gap:16px 8px}.promise-item{gap:8px}.promise-icon{width:36px;height:36px}.promise-item b{font-size:14px}.promise-item small{font-size:8px}.service-grid{grid-template-columns:1fr}.service img{height:190px}.about-grid{grid-template-columns:1fr}.about-image img{height:260px}.contact h2{font-size:39px}.contact-box{padding:42px 17px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="monogram">M</span><span class="brand-name">MALOUKA<small>PROFESSIONAL CLEANING SERVICES</small></span></a>
+<div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<a class="btn" href="https://wa.me/16475940391">Let's talk</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-copy">
+<div class="eyebrow">A touch of luxury in every clean</div>
+<h1>Beautiful spaces.<br><span class="pink">Brilliantly clean.</span></h1>
+<div class="script">A little sparkle. A lot of care.</div><div class="ornament">────── ✦ ──────</div>
+<p class="desc">Come home to comfort, freshness, and the feeling of a space beautifully cared for. Malouka Professional Cleaning Services brings thoughtful attention to every detail.</p>
+<div class="actions"><a class="btn" href="https://wa.me/16475940391?text=Hello%20Malouka%2C%20I%27d%20like%20to%20request%20a%20cleaning%20quote.">Book your cleaning</a><a class="outline" href="#services">Explore services</a></div>
+</div></div>
+<div class="floral" aria-hidden="true"><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><span class="petal"></span><i class="flower-center"></i></div>
+</section>
+<div class="promise"><div class="wrap promise-grid">
+<div class="promise-item"><span class="promise-icon">✧</span><div><b>Premium care</b><small>Attention to every detail</small></div></div>
+<div class="promise-item"><span class="promise-icon">♡</span><div><b>Reliable service</b><small>Care you can count on</small></div></div>
+<div class="promise-item"><span class="promise-icon">❀</span><div><b>Fresh spaces</b><small>A lovely feeling every time</small></div></div>
+<div class="promise-item"><span class="promise-icon">☆</span><div><b>Your happiness</b><small>Your satisfaction matters</small></div></div>
+</div></div>
+<section class="content services" id="services"><div class="wrap">
+<div class="section-head"><div class="script">The Malouka touch</div><h2>Our services</h2><p>Beautifully cared-for spaces begin with the right attention. Discover cleaning services designed around your needs.</p></div>
+<div class="service-grid">
+<article class="service"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Elegant, freshly cleaned living room"><div class="icon">⌂</div><h3>Residential Cleaning</h3><p>Thoughtful cleaning that makes your home feel fresh, calm, and welcoming.</p></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Bright professional office interior"><div class="icon">✧</div><h3>Commercial Cleaning</h3><p>Professional care for offices and business spaces, with details that shine.</p></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Beautiful spotless modern home"><div class="icon">✦</div><h3>Deep Cleaning</h3><p>A detailed refresh for the corners and surfaces that need extra love.</p></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Bright immaculate home interior"><div class="icon">◇</div><h3>Move In / Move Out</h3><p>Settle into a fresh start or leave your previous space beautifully clean.</p></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Clean modern house exterior and interior"><div class="icon">❀</div><h3>Detailed Home Care</h3><p>Extra attention for the finishing touches that make a space feel special.</p></article>
+<article class="service"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Luxury clean living space"><div class="icon">♡</div><h3>Customized Cleaning</h3><p>Tell us what your space needs and we can discuss a service that fits.</p></article>
+</div></div></section>
+<section class="content" id="about"><div class="wrap about-grid">
+<div class="about-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Beautiful, pristine home interior"></div>
+<div class="about-copy"><div class="eyebrow">About Malouka</div><h2>Care in every corner.<br><span class="pink">Beauty in every detail.</span></h2><div class="ornament">────── ✦ ──────</div>
+<p>At Malouka Professional Cleaning Services, we believe a clean space brings a little more ease and beauty to everyday life. We approach every home and workspace with care, respect, and attention to detail.</p>
+<p>Whether you need a regular refresh or a deeper clean, let's talk about how we can help make your space shine.</p>
+<a class="btn" href="https://wa.me/16475940391">Let's talk</a></div>
+</div></section>
+<section class="content contact" id="contact"><div class="wrap"><div class="contact-box">
+<div class="script">We'd love to hear from you</div><h2>LET'S TALK</h2><div class="ornament">────── ✦ ──────</div>
+<p>Ready for a beautifully refreshed space? Send us a message and let's talk about your cleaning needs.</p>
+<div class="contact-actions"><a class="btn" href="https://wa.me/16475940391?text=Hello%20Malouka%2C%20I%27d%20like%20to%20ask%20about%20your%20cleaning%20services.">Chat on WhatsApp</a><a class="outline" href="tel:+16475940391">Call us</a></div>
+<div class="details">647-594-0391<br><a href="mailto:Malekkaoudji14@gmail.com">Malekkaoudji14@gmail.com</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-script">Malouka</div>© 2026 MALOUKA PROFESSIONAL CLEANING SERVICES · ALL RIGHTS RESERVED</div></footer>
+</body></html>
